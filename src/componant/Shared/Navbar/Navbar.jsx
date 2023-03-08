@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import './Navbar.css'
 // import { HiOutlineBars3BottomLeft } from 'react-icons/hi2';
 // import { RxCross2 } from 'react-icons/rx';
+import logo from './../../../assets/logo.png'
 
 const Navbar = () => {
     const [click, setClick] = useState(false)
@@ -48,6 +49,43 @@ const Navbar = () => {
                     </div>
                 </div>
             </nav>
+
+            <header>
+                <div className="container flex_space">
+                    <div className="logo">
+                        <img src={logo} alt="" />
+                    </div>
+                    <div className="contact flex_space">
+                        <div className="box flex_space">
+                            <div className="icon">
+                                <i className='far fa-clock'></i>
+                            </div>
+                            <div className="text">
+                                <h4>Working Hours</h4>
+                                <Link to='/contact'>Sunday - Friday: 10.00am to 6.15pm</Link>
+                            </div>
+                        </div>
+                        <div className="box flex_space">
+                            <div className="icon">
+                                <i className='fa fa-phone-volume'></i>
+                            </div>
+                            <div className="text">
+                                <h4>Call Us</h4>
+                                <Link to='/contact'>+88 01571368878</Link>
+                            </div>
+                        </div>
+                        <div className="box flex_space">
+                            <div className="icon">
+                                <i className='fa-solid fa-envelope'></i>
+                            </div>
+                            <div className="text">
+                                <h4>Mail Us</h4>
+                                <Link to='/contact'>raselhossain.rafi@gmail.com</Link>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
         </>
     );
 };

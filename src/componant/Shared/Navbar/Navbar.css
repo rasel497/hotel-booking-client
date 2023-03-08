@@ -3,8 +3,8 @@
     /*position: sticky;*/
     top: 0;
     z-index: 999;
-    height: 10vh;
-    line-height: 10vh;
+    height: 8vh;
+    line-height: 8vh;
 }
 
 nav ul li {
@@ -14,7 +14,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff;
+    color: #ffff;
     font-weight: 100;
     font-size: 15px;
     letter-spacing: 1px;
@@ -23,7 +23,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: rgb(217, 13, 13);
+    color: yellow;
 }
 
 .nav-links-mobile {
@@ -108,5 +108,60 @@ nav i {
 
     .fa-times {
         font-size: 2rem;
+    }
+}
+
+/* Now start header section with logo and time slot*/
+header {
+    margin: 40px 0 20px 0;
+    background-color: #fff;
+}
+
+header .box {
+    margin: 0 0 0 30px;
+}
+
+header a {
+    font-size: 13px;
+    color: grey;
+}
+
+header i {
+    font-size: 40px;
+    color: #31b675;
+    margin-right: 15px;
+}
+
+header .text {
+    margin-top: 10px;
+}
+
+header h4 {
+    line-height: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header .contact {
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        margin-left: 30px;
+    }
+
+    header a {
+        font-size: 13px;
+    }
+
+    header i {
+
+        font-size: 30px;
+        margin-right: 5px;
+        margin-top: 10px;
     }
 }
